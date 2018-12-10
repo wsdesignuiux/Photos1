@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".Photos1Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_rect1"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/menu_button"
+                android:tint="#a9a9a9" />
+
+            <custome_fonts.EditText_Roboto_Regular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="Search"
+                android:textColor="#61000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/mic_11" />
+
+        </LinearLayout>
+
+        <custome_fonts.MyTextView_Roboto_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="February"
+            android:textColor="#8a000000"
+            android:textSize="14.5sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/li1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_assistant_black"/>
+
+            <custome_fonts.MyTextView_Roboto_Regular
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistant"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1.5dp"
+                android:textColor="#8a000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_photo_black"/>
+
+            <custome_fonts.MyTextView_Roboto_Regular
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+                android:textSize="12sp"
+                android:layout_marginTop="1.5dp"
+                android:layout_gravity="center"
+                android:textColor="#8a000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_bookmard_black"/>
+
+            <custome_fonts.MyTextView_Roboto_Regular
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albums"
+                android:layout_gravity="center"
+                android:layout_marginTop="1.5dp"
+                android:textSize="12sp"
+                android:textColor="#8a000000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
